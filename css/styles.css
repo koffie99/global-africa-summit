@@ -346,7 +346,7 @@ body {
 
 .footer {
   /* height: 30vh; */
-  padding: 40px 20px;
+  padding: 40px 5px;
   width: 100%;
   background-color: #01103b;
   color: white;
@@ -430,6 +430,15 @@ body {
     width: 90%;
     /* margin-bottom: 20px; */
   }
+
+  /* .footer {
+    background-color: orange !important;
+  }
+
+  .footer p {
+    font-size: 13px !important;
+    color: #f9236e;
+  } */
 }
 
 /* Mobile navigation menu */
