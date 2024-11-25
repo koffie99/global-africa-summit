@@ -166,7 +166,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+
+/* .splash .counter {
+  padding: 40;
+  background: white;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  height: 400px;
+  width: 400px;
+} */
 
 .splash .splash-text {
   text-align: center;
@@ -391,6 +402,11 @@ body {
     padding: 15px;
   }
 
+  /* .counter {
+    left: 30;
+    right: 30;
+  } */
+
   .g-top {
     flex-wrap: wrap;
   }
@@ -569,4 +585,58 @@ body {
   .menu-box {
     display: none;
   }
+}
+/* 
+.counter {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #080808;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  z-index: 10;
+}
+
+.counter span {
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.counter span:not(:last-child)::after {
+  content: ":";
+  margin: 0 5px;
+} */
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(90deg, #914ff8, #c23ab6, #f9236e);
+  color: #ffffff;
+  font-weight: 900;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  font-family: "Arial", sans-serif;
+  z-index: 10;
+}
+
+.counter-item {
+  text-align: center;
+}
+
+.counter-item .value {
+  font-size: 1.8rem;
+  display: block;
+}
+
+.counter-item .label {
+  font-size: 0.9rem;
+  margin-top: 5px;
 }
