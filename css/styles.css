@@ -550,7 +550,7 @@ body {
 
   .splash .cta .ticket-btn,
   .splash .cta .learn-btn {
-    padding: 15px;
+    padding: 15px !important;
   }
 
   /* .counter {
