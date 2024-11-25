@@ -20,23 +20,19 @@
     <!-- top section -->
     <div class="g-top">
       <div class="gtop-left">
-        <!-- location -->
         <div class="location">
           <i class="fa-solid fa-location-dot"></i>
           <p>25/B Milford Road, New York</p>
         </div>
-        <!-- mail -->
         <div class="location">
           <i class="fa-regular fa-envelope"></i>
           <p>info@example.com</p>
         </div>
-        <!-- phone -->
         <div class="location">
           <i class="fa-regular fa-envelope"></i>
           <p>+21236547898</p>
         </div>
       </div>
-      <!-- right side -->
       <div class="gtop-right">
         <p>Follow Us:</p>
         <div class="socials">
@@ -58,16 +54,28 @@
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#eventdays">Event Days</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <i class="fa-solid fa-bars"></i>
     </div>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-nav">
+      <i class="fa-solid fa-xmark close-btn"></i>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#eventdays">Event Days</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
     <!-- splash -->
     <div class="splash">
       <div class="splash-text">
-        <h2 class="">Global Africa Summit</h2>
-        <p>
+        <h2 class="" data-aos="zoom-in">Global Africa Summit</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
           Celebrating African success, fostering growth, and uniting businesses
           worldwide.
         </p>
@@ -108,7 +116,7 @@
 
     <!-- event days -->
     <div class="event-days" id="eventdays">
-      <h2>Event Days</h2>
+      <h2 style="margin-bottom: 10px;">Event Days</h2>
       <div class="event-box">
         <div class="event-card" data-aos="zoom-in-right">
           <div class="top"></div>
@@ -134,25 +142,24 @@
           </div>
         </div>
 
-        <!-- second day card -->
         <div class="event-card" data-aos="zoom-out-down">
           <div class="top"></div>
           <div class="bottom">
             <div>
               <p class="desc">Theme</p>
-              <p class="title">The Global Africa Forum</p>
+              <p class="title">The global Africa Gala and Awards Night</p>
             </div>
 
             <div>
               <p class="desc">Date</p>
-              <p class="title">March 25</p>
+              <p class="title">March 26</p>
             </div>
 
             <div>
               <p class="desc">Location</p>
               <p class="title">
-                The Africa Union Office, 1640 Wisconsin Ave NY, Washington DC
-                200007, United States
+                The Salamander, Washington DC. 1330 Maryland Ave SW,Washiington,
+                DC 20024, United States
               </p>
               <button>View Detail</button>
             </div>
@@ -161,14 +168,19 @@
       </div>
     </div>
 
+    <!-- contact page -->
+    <div class="contact" id="contact">
+      <h2>Contact</h2>
+    </div>
+
     <!-- footer -->
     <div class="footer">
       <p>Global Africa Summit @ 2024</p>
     </div>
-    <!-- <script src="./js/scripts.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init()
     </script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
