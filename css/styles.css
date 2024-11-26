@@ -613,17 +613,10 @@ body {
     /* margin-bottom: 20px; */
   }
 
-  #contact {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    margin: auto !important;
-  }
-
   .contact-container {
     flex-direction: column;
     padding-left: 10px !important;
     padding-right: 10px !important;
-    margin: auto;
   }
 
   /* .footer {
