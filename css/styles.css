@@ -614,7 +614,6 @@ body {
   }
 
   #contact {
-    width: 90% !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
     margin: auto !important;
@@ -622,7 +621,6 @@ body {
 
   .contact-container {
     flex-direction: column;
-    width: 90% !important;
     padding-left: 10px !important;
     padding-right: 10px !important;
     margin: auto;
