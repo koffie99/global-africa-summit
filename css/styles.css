@@ -763,15 +763,54 @@ body {
   margin: 0 5px;
 } */
 
-.counter {
+/* .counter {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(90deg, #914ff8, #c23ab6, #f9236e);
+  bottom: 0px;
+  right: 30px;
+  background: linear-gradient(270deg, #914ff8, #c23ab6, #f9236e);
   color: #ffffff;
-  font-weight: 900;
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-weight: 700;
+  padding: 25px 40px;
+  display: flex;
+  gap: 20px;
+  font-family: "Arial", sans-serif;
+  z-index: 10;
+} */
+
+/* .counter-item {
+  text-align: center;
+} */
+
+/* .counter-item .value {
+  font-size: 2.4rem;
+  display: block;
+} */
+
+/* .counter-item .label {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  font-weight: 400 !important;
+} */
+
+/* .c-label {
+  width: 40px;
+  height: 100%;
+  background-color: white;
+} */
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -2px;
+  right: 0px;
+}
+
+.counter {
+  background: linear-gradient(270deg, #914ff8, #c23ab6, #f9236e);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 25px 40px;
   display: flex;
   gap: 20px;
   font-family: "Arial", sans-serif;
@@ -783,11 +822,30 @@ body {
 }
 
 .counter-item .value {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   display: block;
 }
 
 .counter-item .label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 5px;
+  font-weight: 400 !important;
+}
+
+.c-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px; /* Vertical rectangle width */
+  height: 50px; /* Full height of the counter */
+  background-color: white; /* Background color of the rectangle */
+  color: #914ff8; /* Text color matching the gradient */
+  font-weight: bold; /* Bold text */
+  font-family: "Arial", sans-serif; /* Consistent font */
+  text-align: center;
+  transform: rotate(90deg); /* Rotate text to face the counter */
+  transform-origin: center; /* Ensure rotation occurs around the center */
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-top: -3;
 }
