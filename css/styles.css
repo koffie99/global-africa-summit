@@ -372,6 +372,7 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
+  border-radius: 40px !important;
   justify-content: center;
   text-decoration: none;
   margin-top: 30px;
@@ -850,7 +851,7 @@ body {
   margin-top: -3;
 }
 
-.offer-list{
+.offer-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
