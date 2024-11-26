@@ -849,3 +849,31 @@ body {
   margin-right: -40px;
   margin-top: -3;
 }
+
+.offer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offer-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle-box {
+  height: 20px;
+  width: 20px;
+  background-color: #f9236e;
+  padding: 10px;
+  color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-box i {
+  font-size: 10px !important;
+}
