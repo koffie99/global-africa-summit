@@ -539,6 +539,16 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .cta .ticket-btn {
+    padding: 15px !important;
+    width: 50% !important;
+  }
+
+  .cta .learn-btn {
+    padding: 20px !important;
+    width: 50% !important;
+  }
+
   .top-nav i {
     display: block;
     cursor: pointer;
@@ -552,6 +562,10 @@ body {
   .splash .cta .ticket-btn,
   .splash .cta .learn-btn {
     padding: 15px !important;
+  }
+
+  .splash .cta .ticket-btn {
+    width: 200px !important;
   }
 
   /* .counter {
