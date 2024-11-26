@@ -615,6 +615,8 @@ body {
 
   .contact-container {
     flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   /* .footer {
