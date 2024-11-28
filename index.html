@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global African Summit</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./src/output.css" /> -->
+    <link href="./src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/slider.css" />
     <script defer src="./js/slider.js"></script>
     <link
@@ -115,29 +117,6 @@
         </a>
       </div>
 
-      <!-- counter box -->
-      <!-- <div>
-        <div class="counter">
-          <div class="counter-item">
-            <span class="value" id="days">0</span>
-            <span class="label">Days</span>
-          </div>
-          <div class="counter-item">
-            <span class="value" id="hours">0</span>
-            <span class="label">Hours</span>
-          </div>
-          <div class="counter-item">
-            <span class="value" id="minutes">0</span>
-            <span class="label">Minutes</span>
-          </div>
-          <div class="counter-item">
-            <span class="value" id="seconds">0</span>
-            <span class="label">Seconds</span>
-          </div>
-        </div>
-        <div class="c-label"></div>
-      </div> -->
-
       <div class="counter-container">
         <div class="counter">
           <div class="counter-item">
@@ -184,184 +163,139 @@
     </div>
 
     <!-- ticket prices -->
-    <!-- <div class="ticket-prices">
-      <h2>Ticket Prices</h2>
-      <h1>Choose A Ticket Plan</h1>
-      <div class="price-box">
-        <div class="price-card">
-          <img src="./images/top.png" alt="top decoration" />
-          <h3>Conference</h3>
-          <p>$150</p>
-          <div class="bottom">
-            <a href="veetickets.com" target="__blank" class="ticket-btn comp"
-              >Buy Now</a
-            >
-          </div>
+    <div
+    class="ticket-prices bg-[#f9fafd] py-12 md:px-[60px] w-full flex flex-col items-center justify-center m-auto px-[10px] min-h-screen"
+    id="ticketprices"
+  >
+    <h1 class="text-3xl font-bold mb-6">Choose A Package</h1>
+    
+    <!-- Center the grid container horizontally and vertically -->
+    <div
+      class="price-box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-center items-center m-auto w-full px-4"
+    >
+      <!-- Conference Card -->
+      <div class="price-card w-full" data-aos="flip-right" data-aos-duration="1500">
+        <div class="top-section">
+          <img src="./images/top.png" alt="top decoration" class="top-image" />
+          <h3 class="card-title">Conference Packages</h3>
         </div>
-        <div class="price-card"></div>
-      </div>
-    </div> -->
-
-    <div class="ticket-prices" id="ticketprices">
-      <!-- <h2>Conference Packages</h2> -->
-      <h1>Choose A Package</h1>
-      <br />
-      <div class="price-box">
-        <!-- Conference Card -->
-        <div class="price-card" data-aos="flip-right">
-          <div class="top-section">
-            <img
-              src="./images/top.png"
-              alt="top decoration"
-              class="top-image"
-            />
-            <h3 class="card-title">Conference Packages</h3>
-          </div>
-          <p class="price">Free</p>
-          <hr class="dashed-line" />
-          <ul class="offer-list">
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Full event access</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Exclusive Q & A sessions</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Reserved seating for your comfort</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Ask question privately</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Tea and Cofee Break</p>
-            </li>
-          </ul>
-          <div class="bottom">
-            <a href="#" target="__blank" class="ticket-btn comp">Register</a>
-          </div>
-        </div>
-
-        <!-- Gala Night Card -->
-        <div class="price-card" data-aos="flip-left">
-          <div class="top-section">
-            <img
-              src="./images/top.png"
-              alt="top decoration"
-              class="top-image"
-            />
-            <h3 class="card-title">Gala Night</h3>
-          </div>
-          <p class="price">$250</p>
-          <hr class="dashed-line" />
-          <ul class="offer-list">
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Full event access</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Exclusive Q & A sessions</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Reserved seating for your comfort</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Ask question privately</p>
-            </li>
-            <li>
-              <div class="circle-box">
-                <i class="fa-solid fa-check"></i>
-              </div>
-              <p>Tea and Cofee Break</p>
-            </li>
-          </ul>
-          <div class="bottom">
-            <a href="#" target="__blank" class="ticket-btn comp"
-              >Purchase Ticket</a
-            >
-          </div>
+        <p class="price">Free</p>
+        <hr class="dashed-line" />
+        <ul class="offer-list">
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Full event access</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Exclusive Q & A sessions</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Reserved seating for your comfort</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Ask question privately</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Tea and Coffee Break</p></li>
+        </ul>
+        <div class="bottom">
+          <a href="#" target="__blank" class="ticket-btn comp">Register</a>
         </div>
       </div>
+  
+      <!-- Gala Night Card -->
+      <div class="price-card w-full" data-aos="flip-left" data-aos-duration="1700">
+        <div class="top-section">
+          <img src="./images/top.png" alt="top decoration" class="top-image" />
+          <h3 class="card-title">Gala Night</h3>
+        </div>
+        <p class="price">$250</p>
+        <hr class="dashed-line" />
+        <ul class="offer-list">
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Full event access</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Exclusive Q & A sessions</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Reserved seating for your comfort</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Ask question privately</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Tea and Coffee Break</p></li>
+        </ul>
+        <div class="bottom">
+          <a href="#" target="__blank" class="ticket-btn comp">Purchase Ticket</a>
+        </div>
+      </div>
+  
+      <!-- Networking Session Card -->
+      <div class="price-card w-full" data-aos="flip-up" data-aos-duration="1800">
+        <div class="top-section">
+          <img src="./images/top.png" alt="top decoration" class="top-image" />
+          <h3 class="card-title">Networking Session</h3>
+        </div>
+        <p class="price">$100</p>
+        <hr class="dashed-line" />
+        <ul class="offer-list">
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Full event access</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Networking opportunities</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Exclusive Q & A sessions</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Ask question privately</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Tea and Coffee Break</p></li>
+        </ul>
+        <div class="bottom">
+          <a href="#" target="__blank" class="ticket-btn comp">Register</a>
+        </div>
+      </div>
+  
+      <!-- VIP Pass Card -->
+      <div class="price-card w-full" data-aos="flip-right" data-aos-duration="1900">
+        <div class="top-section">
+          <img src="./images/top.png" alt="top decoration" class="top-image" />
+          <h3 class="card-title">VIP Pass</h3>
+        </div>
+        <p class="price">$500</p>
+        <hr class="dashed-line" />
+        <ul class="offer-list">
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Full event access</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Reserved seating</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>VIP dinner access</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Exclusive Q & A sessions</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Backstage access</p></li>
+        </ul>
+        <div class="bottom">
+          <a href="#" target="__blank" class="ticket-btn comp">Purchase Ticket</a>
+        </div>
+      </div>
+  
+      <!-- Workshop Card -->
+      <div class="price-card w-full" data-aos="flip-left" data-aos-duration="2000">
+        <div class="top-section">
+          <img src="./images/top.png" alt="top decoration" class="top-image" />
+          <h3 class="card-title">Workshop</h3>
+        </div>
+        <p class="price">$150</p>
+        <hr class="dashed-line" />
+        <ul class="offer-list">
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Workshop access</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Interactive sessions</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Exclusive Q & A</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Learn from industry experts</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Refreshments included</p></li>
+        </ul>
+        <div class="bottom">
+          <a href="#" target="__blank" class="ticket-btn comp">Register Now</a>
+        </div>
+      </div>
+  
+      <!-- Afterparty Card -->
+      <div class="price-card w-full" data-aos="flip-up" data-aos-duration="2100">
+        <div class="top-section">
+          <img src="./images/top.png" alt="top decoration" class="top-image" />
+          <h3 class="card-title">Afterparty</h3>
+        </div>
+        <p class="price">$80</p>
+        <hr class="dashed-line" />
+        <ul class="offer-list">
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Access to afterparty</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Drinks included</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Live music</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Networking opportunities</p></li>
+          <li><div class="circle-box"><i class="fa-solid fa-check"></i></div><p>Exclusive performances</p></li>
+        </ul>
+        <div class="bottom">
+          <a href="#" target="__blank" class="ticket-btn comp">Buy Ticket</a>
+        </div>
+      </div>
+  
     </div>
-
-    <!-- event days -->
-    <!-- <div class="event-days" id="eventdays">
-      <h2 style="margin-bottom: 10px">Event Days</h2>
-      <div class="event-box">
-        <div class="event-card" data-aos="zoom-in-right">
-          <div class="top"></div>
-          <div class="bottom">
-            <div>
-              <p class="desc">Theme</p>
-              <p class="title">The Global Africa Forum</p>
-            </div>
-
-            <div>
-              <p class="desc">Date</p>
-              <p class="title">March 25</p>
-            </div>
-
-            <div>
-              <p class="desc">Location</p>
-              <p class="title">
-                The Africa Union Office, 1640 Wisconsin Ave NY, Washington DC
-                200007, United States
-              </p>
-              <button>View Detail</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="event-card" data-aos="zoom-out-down">
-          <div class="top"></div>
-          <div class="bottom">
-            <div>
-              <p class="desc">Theme</p>
-              <p class="title">The global Africa Gala and Awards Night</p>
-            </div>
-
-            <div>
-              <p class="desc">Date</p>
-              <p class="title">March 26</p>
-            </div>
-
-            <div>
-              <p class="desc">Location</p>
-              <p class="title">
-                The Salamander, Washington DC. 1330 Maryland Ave SW,Washiington,
-                DC 20024, United States
-              </p>
-              <button>View Detail</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+  </div>
+  
 
     <!-- contact page -->
     <div class="contact" id="contact">

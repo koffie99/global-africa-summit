@@ -14,6 +14,7 @@ html {
 body {
   background-color: #f9fafd;
   width: 100%;
+  /* height: 100; */
 }
 
 .g-top {
@@ -404,57 +405,21 @@ body {
   }
 }
 
-/* ticket prices */
-/* .ticket-prices {
-  height: 100vh;
-  background-color: #f9fafd;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.ticket-prices > h2 {
-  color: #f9236e;
-}
-
-.ticket-prices .price-box .price-card img {
-  width: 100%;
-}
-
-.ticket-prices .price-card {
-  background-color: white;
-  width: 300px;
-  border-radius: 10px;
-  border-radius: 10px;
-  height: 400px;
-  overflow: hidden;
-}
-
-.price-card .bottom{
-  height: 50%;
-} */
-
-.ticket-prices {
-  text-align: center;
-  margin: 50px 0;
-  background-color: white !important;
+/* .ticket-prices { */
+/* text-align: center; */
+/* margin: 50px 0; */
+/* margin: 0 auto; 
+  /* background-color: white !important;
   padding: 40px 0;
-}
-
-.price-box {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+  width: 100%; */
+/* } */
 
 .price-card {
   background-color: #fff;
   /* border: 1px solid #ccc; */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  /* width: 300px; */
   overflow: hidden;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -542,6 +507,10 @@ body {
   .cta .ticket-btn {
     padding: 15px !important;
     width: 50% !important;
+  }
+
+  .ticket-prices {
+    margin: auto !important;
   }
 
   .cta .learn-btn {
