@@ -826,7 +826,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 118px; /* Vertical rectangle width */
+  width: 130px; /* Vertical rectangle width */
   height: 50px; /* Full height of the counter */
   background-color: white; /* Background color of the rectangle */
   color: #914ff8; /* Text color matching the gradient */
@@ -837,7 +837,7 @@ body {
   transform-origin: center; /* Ensure rotation occurs around the center */
   margin-left: -40px;
   margin-right: -40px;
-  margin-top: -3;
+  margin-top: -3px;
 }
 
 .offer-list {
