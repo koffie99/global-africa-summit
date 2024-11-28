@@ -600,6 +600,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -664,6 +668,10 @@ video {
 .bg-\[\#ff379b\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 55 155 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#f\] {
+  background-color: #f;
 }
 
 .px-\[\] {
